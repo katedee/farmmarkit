@@ -1,0 +1,26 @@
+name = Farm Markit
+description = This app will help find farmer's markets.
+core = 7.x
+
+
+; Custom
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
