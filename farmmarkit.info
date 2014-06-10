@@ -3,6 +3,10 @@ description = This app will help find farmer's markets.
 core = 7.x
 
 
+; Features
+dependencies[] = content_types
+
+
 ; Custom
 
 ; Contrib
