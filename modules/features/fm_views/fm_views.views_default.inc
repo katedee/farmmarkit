@@ -105,6 +105,18 @@ function fm_views_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'market' => 'market',
   );
+  /* Filter criterion: Content: Start and End Dates -  start date (field_start_and_end_dates) */
+  $handler->display->display_options['filters']['field_start_and_end_dates_value']['id'] = 'field_start_and_end_dates_value';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value']['table'] = 'field_data_field_start_and_end_dates';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value']['field'] = 'field_start_and_end_dates_value';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value']['operator'] = '<=';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value']['default_date'] = 'now';
+  /* Filter criterion: Content: Start and End Dates - end date (field_start_and_end_dates:value2) */
+  $handler->display->display_options['filters']['field_start_and_end_dates_value2']['id'] = 'field_start_and_end_dates_value2';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value2']['table'] = 'field_data_field_start_and_end_dates';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value2']['field'] = 'field_start_and_end_dates_value2';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_start_and_end_dates_value2']['default_date'] = 'now';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

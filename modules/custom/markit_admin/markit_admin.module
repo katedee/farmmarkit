@@ -1,0 +1,53 @@
+<?php
+
+function markit_admin_block_info() {
+  // This is the ratings block
+
+  $blocks['market_form'] = array(
+    'info' => t('Market Form'),
+  );
+
+  return $blocks;
+}
+
+function markit_admin_block_view($delta = '') {
+  // This example is adapted from node.module.
+  $block = array();
+
+  switch ($delta) {
+    case 'market_form':
+      // Add required 'node' from node module
+
+      module_load_include('inc', 'node', 'node.pages');
+
+      // Define our content type
+      $type = 'market';
+
+      // Create a node object... notice the type casting using (object)
+      $node = (object) array(
+        'type' => $type,
+        'language' => LANGUAGE_NONE,
+      );
+
+      // Get the form from drupal using drupal_get_form
+      // NOTE: for node forms we need to send a node object
+      $form = drupal_get_form($type . '_node_form', $node);
+
+      // Define our subject
+      $block['subject'] = t("Market form");
+
+      // Define what the content of our block will be
+      $block['content']['form'] = $form;
+      
+
+      // unset($form['field_maps']);
+      // dsm($form);
+      break;
+  }
+  return $block;
+}
+
+
+
+
+
