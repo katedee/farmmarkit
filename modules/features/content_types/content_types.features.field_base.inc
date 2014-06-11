@@ -126,6 +126,37 @@ function content_types_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_day'
+  $field_bases['field_day'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_day',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Sunday',
+        2 => 'Monday',
+        3 => 'Tuesday',
+        4 => 'Wednesday',
+        5 => 'Thursday',
+        6 => 'Friday',
+        7 => 'Saturday',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_days_of_the_week_open'
   $field_bases['field_days_of_the_week_open'] = array(
     'active' => 1,
@@ -205,6 +236,61 @@ function content_types_field_default_field_bases() {
     'type' => 'cck_time',
   );
 
+  // Exported field_base: 'field_maps'
+  $field_bases['field_maps'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_maps',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'google_map_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'google_map_field',
+  );
+
+  // Exported field_base: 'field_market'
+  $field_bases['field_market'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_market',
+    'foreign keys' => array(
+      'nid' => array(
+        'columns' => array(
+          'nid' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
+    'indexes' => array(
+      'nid' => array(
+        0 => 'nid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'node_reference',
+    'settings' => array(
+      'referenceable_types' => array(
+        'article' => 0,
+        'market' => 'market',
+        'market_admin' => 0,
+        'market_day' => 0,
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'node_reference',
+  );
+
   // Exported field_base: 'field_phone'
   $field_bases['field_phone'] = array(
     'active' => 1,
@@ -279,15 +365,16 @@ function content_types_field_default_field_bases() {
       'cache_enabled' => 0,
       'granularity' => array(
         'day' => 'day',
-        'hour' => 'hour',
+        'hour' => 0,
         'minute' => 0,
         'month' => 'month',
         'second' => 0,
         'year' => 'year',
       ),
-      'timezone_db' => 'UTC',
+      'repeat' => 0,
+      'timezone_db' => '',
       'todate' => 'required',
-      'tz_handling' => 'site',
+      'tz_handling' => 'none',
     ),
     'translatable' => 0,
     'type' => 'datetime',

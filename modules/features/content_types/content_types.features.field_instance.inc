@@ -289,6 +289,54 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-market-field_maps'
+  $field_instances['node-market-field_maps'] = array(
+    'bundle' => 'market',
+    'default_value' => array(
+      0 => array(
+        'fname' => 'field-maps',
+        'name' => '',
+        'lat' => 43.653226,
+        'lon' => '-79.38318429999998',
+        'zoom' => 12,
+        'center_on' => 'Toronto, ON',
+        'do_center' => 'center',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'google_map_field',
+        'settings' => array(),
+        'type' => 'google_map_field_formatter_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_maps',
+    'label' => 'Maps',
+    'required' => 0,
+    'settings' => array(
+      'cardinality' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'google_map_field',
+      'settings' => array(),
+      'type' => 'google_map_field_widget',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-market-field_phone'
   $field_instances['node-market-field_phone'] = array(
     'bundle' => 'market',
@@ -384,6 +432,7 @@ function content_types_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
         'weight' => 7,
@@ -414,6 +463,7 @@ function content_types_field_default_field_instances() {
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -499,20 +549,217 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-market_day-body'
+  $field_instances['node-market_day-body'] = array(
+    'bundle' => 'market_day',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Notes',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-market_day-field_day'
+  $field_instances['node-market_day-field_day'] = array(
+    'bundle' => 'market_day',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_day',
+    'label' => 'Day',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-market_day-field_end_time'
+  $field_instances['node-market_day-field_end_time'] = array(
+    'bundle' => 'market_day',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'cck_time',
+        'settings' => array(),
+        'type' => 'cck_time_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_end_time',
+    'label' => 'End Time',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'cck_time',
+      'settings' => array(),
+      'type' => 'cck_time_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-market_day-field_market'
+  $field_instances['node-market_day-field_market'] = array(
+    'bundle' => 'market_day',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'node_reference',
+        'settings' => array(),
+        'type' => 'node_reference_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_market',
+    'label' => 'market',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-market_day-field_start_time'
+  $field_instances['node-market_day-field_start_time'] = array(
+    'bundle' => 'market_day',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'cck_time',
+        'settings' => array(),
+        'type' => 'cck_time_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_start_time',
+    'label' => 'Start Time',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'cck_time',
+      'settings' => array(),
+      'type' => 'cck_time_select',
+      'weight' => -1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
   t('City');
   t('Contact name');
+  t('Day');
   t('Days of the week open');
   t('Description');
   t('E-mail');
   t('End Time');
+  t('Maps');
+  t('Notes');
   t('Phone');
   t('Postal Code');
   t('Start Time');
   t('Start and End Dates');
   t('Website');
+  t('market');
 
   return $field_instances;
 }
