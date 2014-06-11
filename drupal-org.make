@@ -33,6 +33,25 @@ projects[token][version] = 1.5
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0
 
+
+
+projects[cck_time][subdir] = contrib
+projects[cck_time][version] = 1.0-beta3
+
+projects[date][subdir] = contrib
+projects[date][version] = 2.7
+
+projects[features][subdir] = contrib
+projects[features][version] = 2.0
+
+projects[views][subdir] = contrib
+projects[views][version] = 3.8
+
+projects[ctools][subdir] = contrib
+projects[ctools][version] = 1.4
+
+projects[google_map_field][subdir] = contrib
+projects[google_map_field][version] = 2.4
 ; THEMES
 
 projects[bootstrap][subdir] = contrib
