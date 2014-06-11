@@ -19,6 +19,7 @@ dependencies[] = google_map_field
 dependencies[] = views
 dependencies[] = ctools
 dependencies[] = references
+dependencies[] = afb
 
 
 ; Core
