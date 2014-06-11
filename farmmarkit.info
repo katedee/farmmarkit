@@ -12,6 +12,13 @@ dependencies[] = content_types
 ; Contrib
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = cck_time
+dependencies[] = date
+dependencies[] = features
+dependencies[] = google_map_field
+dependencies[] = views
+dependencies[] = ctools
+
 
 ; Core
 dependencies[] = block
