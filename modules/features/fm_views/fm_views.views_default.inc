@@ -65,12 +65,12 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_city']['table'] = 'field_data_field_city';
   $handler->display->display_options['fields']['field_city']['field'] = 'field_city';
   $handler->display->display_options['fields']['field_city']['element_label_colon'] = FALSE;
-  /* Field: Content: Days of the week open */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_days_of_the_week_open']['id'] = 'field_days_of_the_week_open';
   $handler->display->display_options['fields']['field_days_of_the_week_open']['table'] = 'field_data_field_days_of_the_week_open';
   $handler->display->display_options['fields']['field_days_of_the_week_open']['field'] = 'field_days_of_the_week_open';
+  $handler->display->display_options['fields']['field_days_of_the_week_open']['label'] = 'Days of the week open';
   $handler->display->display_options['fields']['field_days_of_the_week_open']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_days_of_the_week_open']['delta_offset'] = '0';
   /* Field: Content: End Time */
   $handler->display->display_options['fields']['field_end_time']['id'] = 'field_end_time';
   $handler->display->display_options['fields']['field_end_time']['table'] = 'field_data_field_end_time';

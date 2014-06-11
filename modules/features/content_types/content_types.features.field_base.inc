@@ -157,37 +157,6 @@ function content_types_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_days_of_the_week_open'
-  $field_bases['field_days_of_the_week_open'] = array(
-    'active' => 1,
-    'cardinality' => 7,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_days_of_the_week_open',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        1 => 'Sunday',
-        2 => 'Monday',
-        3 => 'Tuesday',
-        4 => 'Wednesday',
-        5 => 'Thursday',
-        6 => 'Friday',
-        7 => 'Saturday',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_e_mail'
   $field_bases['field_e_mail'] = array(
     'active' => 1,

@@ -175,43 +175,6 @@ function content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-market-field_days_of_the_week_open'
-  $field_instances['node-market-field_days_of_the_week_open'] = array(
-    'bundle' => 'market',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_days_of_the_week_open',
-    'label' => 'Days of the week open',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 12,
-    ),
-  );
-
   // Exported field_instance: 'node-market-field_e_mail'
   $field_instances['node-market-field_e_mail'] = array(
     'bundle' => 'market',
@@ -249,43 +212,6 @@ function content_types_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-market-field_end_time'
-  $field_instances['node-market-field_end_time'] = array(
-    'bundle' => 'market',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'cck_time',
-        'settings' => array(),
-        'type' => 'cck_time_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_end_time',
-    'label' => 'End Time',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'cck_time',
-      'settings' => array(),
-      'type' => 'cck_time_select',
-      'weight' => 11,
     ),
   );
 
@@ -469,43 +395,6 @@ function content_types_field_default_field_instances() {
       ),
       'type' => 'date_text',
       'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'node-market-field_start_time'
-  $field_instances['node-market-field_start_time'] = array(
-    'bundle' => 'market',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'cck_time',
-        'settings' => array(),
-        'type' => 'cck_time_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_start_time',
-    'label' => 'Start Time',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'cck_time',
-      'settings' => array(),
-      'type' => 'cck_time_select',
-      'weight' => 10,
     ),
   );
 
@@ -748,7 +637,6 @@ function content_types_field_default_field_instances() {
   t('City');
   t('Contact name');
   t('Day');
-  t('Days of the week open');
   t('Description');
   t('E-mail');
   t('End Time');

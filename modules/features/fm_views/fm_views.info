@@ -1,7 +1,7 @@
 name = fm-views
 core = 7.x
 package = Features
-version = 7.x-0.2
+version = 7.x-0.3
 project = fm_views
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
