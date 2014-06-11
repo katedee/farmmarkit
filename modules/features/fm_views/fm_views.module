@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the fm-views feature.
+ */
+
+include_once 'fm_views.features.inc';
