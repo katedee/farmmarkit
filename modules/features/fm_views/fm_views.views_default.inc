@@ -28,12 +28,11 @@ function fm_views_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
-      'field' => 'field_days_of_the_week_open',
+      'field' => 'field_day',
       'rendered' => 1,
       'rendered_strip' => 0,
     ),
@@ -43,6 +42,10 @@ function fm_views_views_default_views() {
     'title' => 'title',
   );
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  /* Relationship: Content: market (field_market) - reverse */
+  $handler->display->display_options['relationships']['reverse_field_market_node']['id'] = 'reverse_field_market_node';
+  $handler->display->display_options['relationships']['reverse_field_market_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_market_node']['field'] = 'reverse_field_market_node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -65,12 +68,6 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_city']['table'] = 'field_data_field_city';
   $handler->display->display_options['fields']['field_city']['field'] = 'field_city';
   $handler->display->display_options['fields']['field_city']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_days_of_the_week_open']['id'] = 'field_days_of_the_week_open';
-  $handler->display->display_options['fields']['field_days_of_the_week_open']['table'] = 'field_data_field_days_of_the_week_open';
-  $handler->display->display_options['fields']['field_days_of_the_week_open']['field'] = 'field_days_of_the_week_open';
-  $handler->display->display_options['fields']['field_days_of_the_week_open']['label'] = 'Days of the week open';
-  $handler->display->display_options['fields']['field_days_of_the_week_open']['element_label_colon'] = FALSE;
   /* Field: Content: End Time */
   $handler->display->display_options['fields']['field_end_time']['id'] = 'field_end_time';
   $handler->display->display_options['fields']['field_end_time']['table'] = 'field_data_field_end_time';
@@ -86,6 +83,17 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['element_label_colon'] = FALSE;
+  /* Field: Content: Day */
+  $handler->display->display_options['fields']['field_day']['id'] = 'field_day';
+  $handler->display->display_options['fields']['field_day']['table'] = 'field_data_field_day';
+  $handler->display->display_options['fields']['field_day']['field'] = 'field_day';
+  $handler->display->display_options['fields']['field_day']['relationship'] = 'reverse_field_market_node';
+  $handler->display->display_options['fields']['field_day']['element_label_colon'] = FALSE;
+  /* Field: Content: Start Time */
+  $handler->display->display_options['fields']['field_start_time_1']['id'] = 'field_start_time_1';
+  $handler->display->display_options['fields']['field_start_time_1']['table'] = 'field_data_field_start_time';
+  $handler->display->display_options['fields']['field_start_time_1']['field'] = 'field_start_time';
+  $handler->display->display_options['fields']['field_start_time_1']['relationship'] = 'reverse_field_market_node';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -120,6 +128,9 @@ function fm_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['path'] = 'markets-list';
   $export['markets_list'] = $view;
 
