@@ -8,6 +8,7 @@ dependencies[] = content_types
 
 
 ; Custom
+dependencies[] = markets_list
 
 ; Contrib
 dependencies[] = admin_menu

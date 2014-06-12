@@ -1,0 +1,101 @@
+<?php
+
+function markets_list_menu() {
+  $items['_load_items'] = array(
+    'title' => 'Load Market List',
+    'page callback' => 'markets_list_load',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+function markets_list_load() {
+  $infos = markets_list_get_infos();
+  foreach ($infos as $info){
+    markets_list_create_node($info);
+  };
+  // $node = node_load(1);
+  // dsm($node);
+  return "hello";
+
+}
+
+function markets_list_create_node($info){
+  global $user;
+  $node = new stdClass();
+  $node->title = $info["title"];
+  $node->type = $info["type"];
+  node_object_prepare($node); // Sets some defaults. Invokes hook_prepare() and hook_node_prepare().
+  $node->language = LANGUAGE_NONE; // Or e.g. 'en' if locale is enabled
+  $node->uid = $user->uid;
+  $node->status = 1; //(1 or 0): published or not
+  // Term reference (taxonomy) field
+  $node->field_address[$node->language][0]['value'] = $info["address"];
+  $node->field_city[$node->language][0]['value'] = $info["city"];
+  $node->field_contact_name[$node->language][0]['value'] = $info["contact name"];
+  $node->field_e_mail[$node->language][0]['value'] = $info["email"];
+  $node->field_phone[$node->language][0]['value'] = $info["phone"];
+  $node->field_postal_code[$node->language][0]['value'] = $info["postal code"];
+  $node->field_start_and_end_dates[$node->language][0]['value'] = $info["start date"];
+  $node->field_start_and_end_dates[$node->language][0]['value2'] = $info["end date"];
+  $node->field_website[$node->language][0]['value'] = $info["website"];
+  // Entity reference field
+  // 'node' is default,
+  // Other possible values are "user" and  "taxonomy_term" 
+  $node = node_submit($node); // Prepare node for saving
+  node_save($node);
+  //drupal_set_message( "Node with nid " . $node->nid . " saved!\n");
+}
+
+function markets_list_get_infos(){
+  $infos = array(
+    array (
+      "title" => "St. Lawrence",
+      "type" => "market",
+      "address" => "92 Front Street East",
+      "city" => "Toronto",
+      "contact name" => "Nick Simos",
+      "email" => "nsimos@toronto.ca",
+      "phone" => "416-392-7120",
+      "postal code" => "M5E1C4",
+      "start date" => "2014-01-01 00:00:00",
+      "end date" => "2014-12-31 00:00:00",
+      "website" => "www.stlawrencemarket.com",
+    ),
+
+    array (
+      "title" => "Liberty Village MyMarket",
+      "type" => "market",
+      "address" => "Located just north of the CNE, Dufferin Gates, Liberty & Hannah Streets. Green P lot",
+      "city" => "Toronto",
+      "contact name" => "Diana Gonzalez",
+      "email" => "diana.mymarket@gmail.com",
+      "phone" => "647-898-1492",
+      "postal code" => "M5E1C4",
+      "start date" => "2014-06-01 00:00:00",
+      "end date" => "2014-11-27 00:00:00",
+      "website" => "www.my-market.ca",
+    ),
+
+    array (
+      "title" => "The Leslieville Farmers' Market",
+      "type" => "market",
+      "address" => "20 Woodward Ave",
+      "city" => "Toronto",
+      "contact name" => "Daniel Taylor",
+      "email" => " daniel@leslievillemarket.com",
+      "phone" => "416-219-1453",
+      "postal code" => " M4L1A7",
+      "start date" => "2014-06-01 00:00:00",
+      "end date" => "2014-11-27 00:00:00",
+      "website" => "www.my-market.ca",
+    )
+
+  );
+  return $infos;
+}
+
+
+

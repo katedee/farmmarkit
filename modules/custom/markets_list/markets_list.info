@@ -1,0 +1,3 @@
+name = Farmers' market list
+description = list of the markets so I never have to type dumb data again.
+core = 7.x
