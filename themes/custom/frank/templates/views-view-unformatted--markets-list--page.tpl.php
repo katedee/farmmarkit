@@ -9,7 +9,7 @@
 dsm($variables);
 $title = substr($title, 5);
 ?>
-<div class=<?php print "'" . strtolower($title) . "'";?>>
+<div class=<?php print "'" . strtolower($title) . " day-group'";?>>
 	<?php if (!empty($title)): ?>
 	  <h3><?php print $title; ?></h3>
 	<?php endif; ?>
