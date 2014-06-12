@@ -1,6 +1,13 @@
-alert("hello");
+jQuery(document).ready(function() {
+	alert("hey there");
+});
 
-jQuery(document).ready(function(){
+
+
+
+jQuery(document).ready(function($){
+	alert("hello");
+
 	var today = new Date(Date.now());
 
 	var dayOfWeek = today.getDay();

@@ -6,8 +6,10 @@
  *
  * @ingroup views_templates
  */
+dsm($variables);
+$title = substr($title, 5);
 ?>
-<div class="day-group">
+<div class=<?php print "'" . strtolower($title) . "'";?>>
 	<?php if (!empty($title)): ?>
 	  <h3><?php print $title; ?></h3>
 	<?php endif; ?>
