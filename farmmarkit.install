@@ -69,7 +69,7 @@ function farmmarkit_install() {
   filter_format_save($full_html_format);
 
   // Set theme settings.
-  $default_theme = 'bootstrap';
+  $default_theme = 'frank';
   $admin_theme = 'seven';
   variable_set('theme_default', $default_theme);
   db_update('system')
