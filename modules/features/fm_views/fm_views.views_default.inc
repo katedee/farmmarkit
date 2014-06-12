@@ -29,7 +29,7 @@ function fm_views_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
       'field' => 'field_day',
@@ -37,6 +37,7 @@ function fm_views_views_default_views() {
       'rendered_strip' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['row_class'] = 'test';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'title' => 'title',
@@ -89,6 +90,8 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_day']['field'] = 'field_day';
   $handler->display->display_options['fields']['field_day']['relationship'] = 'reverse_field_market_node';
   $handler->display->display_options['fields']['field_day']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_day']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_day']['element_wrapper_class'] = 'test';
   /* Field: Content: Start Time */
   $handler->display->display_options['fields']['field_start_time_1']['id'] = 'field_start_time_1';
   $handler->display->display_options['fields']['field_start_time_1']['table'] = 'field_data_field_start_time';
@@ -131,6 +134,24 @@ function fm_views_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_day',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['row_class'] = 'test';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'title' => 'title',
+  );
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['path'] = 'markets-list';
   $export['markets_list'] = $view;
 
