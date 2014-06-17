@@ -215,28 +215,18 @@ function content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-market-field_maps'
-  $field_instances['node-market-field_maps'] = array(
+  // Exported field_instance: 'node-market-field_latitude_'
+  $field_instances['node-market-field_latitude_'] = array(
     'bundle' => 'market',
-    'default_value' => array(
-      0 => array(
-        'fname' => 'field-maps',
-        'name' => '',
-        'lat' => 43.653226,
-        'lon' => '-79.38318429999998',
-        'zoom' => 12,
-        'center_on' => 'Toronto, ON',
-        'do_center' => 'center',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'google_map_field',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'google_map_field_formatter_default',
+        'type' => 'text_default',
         'weight' => 12,
       ),
       'teaser' => array(
@@ -247,19 +237,61 @@ function content_types_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_maps',
-    'label' => 'Maps',
+    'field_name' => 'field_latitude_',
+    'label' => 'Latitude ',
     'required' => 0,
     'settings' => array(
-      'cardinality' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'google_map_field',
-      'settings' => array(),
-      'type' => 'google_map_field_widget',
-      'weight' => 13,
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-market-field_longitude'
+  $field_instances['node-market-field_longitude'] = array(
+    'bundle' => 'market',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_longitude',
+    'label' => 'Longitude',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
     ),
   );
 
@@ -640,7 +672,8 @@ function content_types_field_default_field_instances() {
   t('Description');
   t('E-mail');
   t('End Time');
-  t('Maps');
+  t('Latitude ');
+  t('Longitude');
   t('Notes');
   t('Phone');
   t('Postal Code');

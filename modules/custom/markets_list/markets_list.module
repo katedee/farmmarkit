@@ -52,18 +52,89 @@ function markets_list_create_node($info){
 function markets_list_get_infos(){
   $infos = array(
     array (
-      "title" => "St. Lawrence",
+      "title" => "Apple Tree Markets",
       "type" => "market",
-      "address" => "92 Front Street East",
+      "address" => "Davisville Ave and Mount Pleasant",
       "city" => "Toronto",
-      "contact name" => "Nick Simos",
-      "email" => "nsimos@toronto.ca",
-      "phone" => "416-392-7120",
-      "postal code" => "M5E1C4",
-      "start date" => "2014-01-01 00:00:00",
-      "end date" => "2014-12-31 00:00:00",
-      "website" => "www.stlawrencemarket.com",
+      "contact name" => "Lesley Stoyan",
+      "email" => "appletreemarkets@gmail.com",
+      "phone" => "416-899-1990",
+      "postal code" => "M4S",
+      "start date" => "2014-05-14 00:00:00",
+      "end date" => "2014-10-08 00:00:00",
+      "website" => "www.appletreemarkets.ca",
     ),
+
+    array (
+      "title" => "Bloor Borden MyMarket",
+      "type" => "market",
+      "address" => "Lippincott Street, Green P Carpark In the heart of Toronto's Annex Neighbourhood",
+      "city" => "Toronto",
+      "contact name" => "Diana Gonzalez",
+      "email" => "diana.mymarket@gmail.com",
+      "phone" => "647-848-1497",
+      "postal code" => "M2K",
+      "start date" => "2014-06-06 00:00:00",
+      "end date" => "2014-10-17 00:00:00",
+      "website" => "www.my-market.ca",
+    ), 
+
+    array (
+      "title" => "Dufferin Grove Organic Farmers' Market",
+      "type" => "market",
+      "address" => "Dufferin Grove Park, 873 Dufferin St., Toronto (south of Bloor, east side of Dufferin)",
+      "city" => "Toronto",
+      "contact name" => "Anne Freeman",
+      "email" => "market@dufferinpark.ca",
+      "phone" => "416-392-0913",
+      "postal code" => "M6H",
+      "start date" => "2014-01-02 00:00:00",
+      "end date" => "2014-12-18 00:00:00",
+      "website" => "www.dufferinpark.ca",
+    ),  
+
+    array (
+      "title" => "East Lynn Park MyMarket",
+      "type" => "market",
+      "address" => "East Lynn Park on Danforth Ave. E. between Coxwell and Woodbine",
+      "city" => "Toronto",
+      "contact name" => "Diana Gonzalez",
+      "email" => "diana.mymarket@gmail.com",
+      "phone" => "647-898-1492",
+      "postal code" => "",
+      "start date" => "2014-06-05 00:00:00",
+      "end date" => "2014-08-16 00:00:00",
+      "website" => "www.my-market.ca",
+    ),  
+
+    array (
+      "title" => "East York Farmers' Market",
+      "type" => "market",
+      "address" => "Located in front of the East York Civic Centre in the park at 850 Coxwel",
+      "city" => "Toronto",
+      "contact name" => "Ruth Abbott",
+      "email" => "rabbott@sympatico.ca",
+      "phone" => "416-429-9684",
+      "postal code" => "",
+      "start date" => "2014-05-13 00:00:00",
+      "end date" => "2014-10-28 00:00:00",
+      "website" => "",
+    ), 
+
+    array (
+      "title" => "East York Farmers' Market",
+      "type" => "market",
+      "address" => "Located in front of the East York Civic Centre in the park at 850 Coxwel",
+      "city" => "Toronto",
+      "contact name" => "Ruth Abbott",
+      "email" => "rabbott@sympatico.ca",
+      "phone" => "416-429-9684",
+      "postal code" => "",
+      "start date" => "2014-05-13 00:00:00",
+      "end date" => "2014-10-28 00:00:00",
+      "website" => "",
+    ),   
+
 
     array (
       "title" => "Liberty Village MyMarket",
@@ -79,19 +150,7 @@ function markets_list_get_infos(){
       "website" => "www.my-market.ca",
     ),
 
-    array (
-      "title" => "The Leslieville Farmers' Market",
-      "type" => "market",
-      "address" => "20 Woodward Ave",
-      "city" => "Toronto",
-      "contact name" => "Daniel Taylor",
-      "email" => " daniel@leslievillemarket.com",
-      "phone" => "416-219-1453",
-      "postal code" => " M4L1A7",
-      "start date" => "2014-05-25 00:00:00",
-      "end date" => "2014-10-26 00:00:00",
-      "website" => "www.my-market.ca",
-    ),
+   
 
      array (
       "title" => "Sorauren Farmers' Market",
@@ -107,19 +166,7 @@ function markets_list_get_infos(){
       "website" => "http://www.westendfood.coop/",
     ),
 
-     array (
-      "title" => "Apple Tree Markets",
-      "type" => "market",
-      "address" => "Davisville Ave and Mount Pleasant",
-      "city" => "Toronto",
-      "contact name" => "Lesley Stoyan",
-      "email" => "appletreemarkets@gmail.com",
-      "phone" => "416-899-1990",
-      "postal code" => "M4S",
-      "start date" => "2014-05-14 00:00:00",
-      "end date" => "2014-10-08 00:00:00",
-      "website" => "www.appletreemarkets.ca",
-    ), 
+      
 
      array (
       "title" => "MyMarket at Concord CityPlace",
@@ -149,19 +196,33 @@ function markets_list_get_infos(){
       "website" => "www.my-market.ca",
     ), 
 
-     array (
-      "title" => "Bloor Borden MyMarket",
+      array (
+      "title" => "St. Lawrence",
       "type" => "market",
-      "address" => "Lippincott Street, Green P Carpark In the heart of Toronto's Annex Neighbourhood",
+      "address" => "92 Front Street East",
       "city" => "Toronto",
-      "contact name" => "Diana Gonzalez",
-      "email" => "diana.mymarket@gmail.com",
-      "phone" => "647-848-1497",
-      "postal code" => "M2K",
-      "start date" => "2014-06-06 00:00:00",
-      "end date" => "2014-10-17 00:00:00",
+      "contact name" => "Nick Simos",
+      "email" => "nsimos@toronto.ca",
+      "phone" => "416-392-7120",
+      "postal code" => "M5E1C4",
+      "start date" => "2014-01-01 00:00:00",
+      "end date" => "2014-12-31 00:00:00",
+      "website" => "www.stlawrencemarket.com",
+    ),
+     
+      array (
+      "title" => "The Leslieville Farmers' Market",
+      "type" => "market",
+      "address" => "20 Woodward Ave",
+      "city" => "Toronto",
+      "contact name" => "Daniel Taylor",
+      "email" => " daniel@leslievillemarket.com",
+      "phone" => "416-219-1453",
+      "postal code" => " M4L1A7",
+      "start date" => "2014-05-25 00:00:00",
+      "end date" => "2014-10-26 00:00:00",
       "website" => "www.my-market.ca",
-    ), 
+    ),
 
 
   );

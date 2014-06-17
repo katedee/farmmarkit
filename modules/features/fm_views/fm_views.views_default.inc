@@ -97,6 +97,22 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_start_time_1']['table'] = 'field_data_field_start_time';
   $handler->display->display_options['fields']['field_start_time_1']['field'] = 'field_start_time';
   $handler->display->display_options['fields']['field_start_time_1']['relationship'] = 'reverse_field_market_node';
+  /* Field: Content: Latitude  */
+  $handler->display->display_options['fields']['field_latitude_']['id'] = 'field_latitude_';
+  $handler->display->display_options['fields']['field_latitude_']['table'] = 'field_data_field_latitude_';
+  $handler->display->display_options['fields']['field_latitude_']['field'] = 'field_latitude_';
+  $handler->display->display_options['fields']['field_latitude_']['label'] = '';
+  $handler->display->display_options['fields']['field_latitude_']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_latitude_']['element_class'] = 'latitude';
+  $handler->display->display_options['fields']['field_latitude_']['element_label_colon'] = FALSE;
+  /* Field: Content: Longitude */
+  $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['table'] = 'field_data_field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['label'] = '';
+  $handler->display->display_options['fields']['field_longitude']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_longitude']['element_class'] = 'longitude';
+  $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
