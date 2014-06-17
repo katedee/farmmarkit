@@ -1,20 +1,20 @@
 jQuery(document).ready(function($){
+	reorderMarkets();
+	function reorderMarkets () {
+		var targetElement = $('.view-content');
 
-	var targetElement = $('.view-content');
+		var marketDays = $('.day-group');
+		var marketDay;
 
-	var marketDays = $('.day-group');
-	var marketDay;
+		targetElement.html("");
+		var nextSevenDays = getNextSevenDays();
 
-	targetElement.html("");
-	var nextSevenDays = getNextSevenDays();
-
-	for (var dayIndex = 0; dayIndex < nextSevenDays.length; dayIndex++) {
-		
-
-		for(var i = 0; i < marketDays.length; i++) {
-			marketDay = $(marketDays[i]);
-			if(marketDay.hasClass(nextSevenDays[dayIndex])) {
-				targetElement.append(marketDay);
+		for (var dayIndex = 0; dayIndex < nextSevenDays.length; dayIndex++) {
+			for(var i = 0; i < marketDays.length; i++) {
+				marketDay = $(marketDays[i]);
+				if(marketDay.hasClass(nextSevenDays[dayIndex])) {
+					targetElement.append(marketDay);
+				}
 			}
 		}
 	}
