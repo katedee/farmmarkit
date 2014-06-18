@@ -6,7 +6,11 @@
  *
  * @ingroup views_templates
  */
-dsm($variables);
+// dsm($variables);
+
+// $node = node_load(14);
+// dsm($node);
+
 $title = substr($title, 5);
 ?>
 <div class=<?php print "'" . strtolower($title) . " day-group'";?>>

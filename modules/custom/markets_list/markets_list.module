@@ -11,6 +11,28 @@ function markets_list_menu() {
   return $items;
 }
 
+function markets_days_menu() {
+  $items['_load_days'] = array(
+    'title' => 'Load Market Days',
+    'page callback' => 'markets_days_load',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+function markets_days_load() {
+
+  $days = markets_day_list();
+  foreach ($days as $day){
+    markets_day_create_node($day);
+  };
+  // $node = node_load(1);
+  // dsm($node);
+  return "goodbye";
+}
+
 function markets_list_load() {
   $infos = markets_list_get_infos();
   foreach ($infos as $info){
@@ -19,7 +41,6 @@ function markets_list_load() {
   // $node = node_load(1);
   // dsm($node);
   return "hello";
-
 }
 
 function markets_list_create_node($info){
@@ -247,9 +268,393 @@ function markets_list_get_infos(){
       "longitude" => "-79.319742",
     ),
 
+      array (
+       "title" => "Humber Bay Shore Farmers' Market",
+       "type" => "market",
+       "address" => "Humber Bay West Parking Lot",
+       "city" => "Toronto",
+       "contact name" => "Jim Reeke",
+       "email" => "HBSfarmersmarket@rogers.com",
+       "phone" => "416-503-1527",
+       "postal code" => "M8V3X7",
+       "start date" => "2014-06-01 00:00:00",
+       "end date" => "2014-10-12 00:00:00",
+       "website" => "humberbayshores.org",
+       "latitude" => "43.616495",
+       "longitude" => "-79.477419",
+     ),
+
+     array (
+      "title" => "Junction Farmers' Market",
+      "type" => "market",
+      "address" => "2960 Dundas St West",
+      "city" => "Toronto",
+      "contact name" => "Chris Ganowski",
+      "email" => "chrisganowski@gmail.com",
+      "phone" => "647-985-8602",
+      "postal code" => "M6P1Z2",
+      "start date" => "2014-05-24 00:00:00",
+      "end date" => "2014-11-01 00:00:00",
+      "website" => "juntionmarket.ca",
+      "latitude" => "43.665436",
+      "longitude" => "-79.468188",
+    ),
+
+     array (
+      "title" => "Metro Hall Farmers' Market",
+      "type" => "market",
+      "address" => "SE corner of King St West and John St",
+      "city" => "Toronto",
+      "contact name" => "Cathy Bartolic",
+      "email" => "info@ontariofarmfresh.com",
+      "phone" => "905-841-9278",
+      "postal code" => "M5V",
+      "start date" => "2014-05-29 00:00:00",
+      "end date" => "2014-10-16 00:00:00",
+      "website" => "ontariofarmfresh.com",
+      "latitude" => "43.646506",
+      "longitude" => "-79.389653",
+    ),
+
+     array (
+      "title" => "Nathan Phillips Square Farmers' Market",
+      "type" => "market",
+      "address" => "Toronto City Hall",
+      "city" => "Toronto",
+      "contact name" => "Cathy Bartolic",
+      "email" => "info@ontariofarmfresh.com",
+      "phone" => "905-841-9278",
+      "postal code" => "M5V",
+      "start date" => "2014-06-04 00:00:00",
+      "end date" => "2014-10-15 00:00:00",
+      "website" => "ontariofarmfresh.com",
+      "latitude" => "43.651929",
+      "longitude" => "-79.382787",
+    ),
+
+     array (
+      "title" => "Trinity Bellwoods Farmers' Market",
+      "type" => "market",
+      "address" => "1053 Dundas Street West",
+      "city" => "Toronto",
+      "contact name" => "Carolyn Wang",
+      "email" => "info@tbfm.ca",
+      "phone" => "416-435-8860",
+      "postal code" => "M6J1X1",
+      "start date" => "2014-05-06 00:00:00",
+      "end date" => "2014-10-28 00:00:00",
+      "website" => "tbfm.ca",
+      "latitude" => "43.646448",
+      "longitude" => "-79.413471",
+    ),
 
   );
   return $infos;
+}
+
+function markets_day_create_node($days){
+  global $user;
+  $node = new stdClass();
+  $node->title = $days['title'];
+  $node->type = $days['type'];
+  node_object_prepare($node); // Sets some defaults. Invokes hook_prepare() and hook_node_prepare().
+  $node->language = LANGUAGE_NONE; // Or e.g. 'en' if locale is enabled
+  $node->uid = $user->uid;
+  $node->status = 1; //(1 or 0): published or not
+  // Term reference (taxonomy) field
+  $node->field_day[$node->language][0]['value'] = $days['day'];
+  $node->field_start_time[$node->language][0]['hour'] = $days['start hr'];
+  $node->field_start_time[$node->language][0]['minute'] = $days['start min'];
+  $node->field_start_time[$node->language][0]['meridiem'] = $days['start ampm'];
+  $node->field_end_time[$node->language][0]['hour'] =$days['end hr'];
+  $node->field_end_time[$node->language][0]['minute'] = $days['end min'];
+  $node->field_end_time[$node->language][0]['meridiem'] = $days['end ampm'];
+  $node->field_market[$node->language][0]['nid'] = $days['market'];
+  
+  // Entity reference field
+  // 'node' is default,
+  // Other possible values are "user" and  "taxonomy_term" 
+  $node = node_submit($node); // Prepare node for saving
+  node_save($node);
+  //drupal_set_message( "Node with nid " . $node->nid . " saved!\n");
+}
+
+function markets_day_list(){
+  $days = array(
+    array(
+      "title" => "tuesday Apple",
+      "type" => "market_day",
+      "day" => "3",
+      "start hr" => "3",
+      "start min" => "15",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 1,
+    ),
+
+    array(
+      "title" => "wednesday Bloor Borden",
+      "type" => "market_day",
+      "day" => "4",
+      "start hr" => "3",
+      "start min" => "00",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 2,
+    ),
+
+    array(
+      "title" => "Thursday Dufferin Grove",
+      "type" => "market_day",
+      "day" => "5",
+      "start hr" => "3",
+      "start min" => "00",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 3,
+    ),
+
+    array(
+      "title" => "Thursday East Lynn",
+      "type" => "market_day",
+      "day" => "2",
+      "start hr" => "5",
+      "start min" => "00",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 4,
+    ),
+
+    array(
+      "title" => "Tuesday East York",
+      "type" => "market_day",
+      "day" => "3",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "2",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 5,
+    ),
+
+    array(
+      "title" => "Saturday Evergreen",
+      "type" => "market_day",
+      "day" => "7",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "1",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 6,
+    ),
+
+    array(
+      "title" => "Sunday Liberty Village",
+      "type" => "market_day",
+      "day" => "1",
+      "start hr" => "9",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "2",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 7,
+    ),
+
+    array(
+      "title" => "Tuesday CityPlace",
+      "type" => "market_day",
+      "day" => "3",
+      "start hr" => "3",
+      "start min" => "30",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "30",
+      "end ampm" => "PM",
+      "market" => 8,
+    ),
+
+    array(
+      "title" => "Friday ParkPlace",
+      "type" => "market_day",
+      "day" => "6",
+      "start hr" => "3",
+      "start min" => "00",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 9,
+    ),
+
+    array(
+      "title" => "Monday Sorauren",
+      "type" => "market_day",
+      "day" => "2",
+      "start hr" => "3",
+      "start min" => "00",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 10,
+    ),
+
+    array(
+      "title" => "Tuesday St Lawrence",
+      "type" => "market_day",
+      "day" => "3",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "6",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 11,
+    ),
+
+    array(
+      "title" => "Wednesday St Lawrence",
+      "type" => "market_day",
+      "day" => "4",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "6",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 11,
+    ),
+
+    array(
+      "title" => "Thursday St Lawrence",
+      "type" => "market_day",
+      "day" => "5",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "6",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 11,
+    ),
+
+    array(
+      "title" => "Friday St Lawrence",
+      "type" => "market_day",
+      "day" => "6",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 11,
+    ),
+
+    array(
+      "title" => "Saturday St Lawrence",
+      "type" => "market_day",
+      "day" => "7",
+      "start hr" => "5",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "5",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 11,
+    ),
+
+    array(
+      "title" => "Sunday Leslieville",
+      "type" => "market_day",
+      "day" => "1",
+      "start hr" => "9",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "2",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 12,
+    ),
+
+    array(
+      "title" => "Saturday Humber",
+      "type" => "market_day",
+      "day" => "7",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "1",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 13,
+    ),
+
+    array(
+      "title" => "Saturday Junction",
+      "type" => "market_day",
+      "day" => "7",
+      "start hr" => "9",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "1",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 14,
+    ),
+
+    array(
+      "title" => "Thursday Metro Hall",
+      "type" => "market_day",
+      "day" => "5",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "2",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 15,
+    ),
+
+    array(
+      "title" => "Wednesday Nathan Phillips",
+      "type" => "market_day",
+      "day" => "4",
+      "start hr" => "8",
+      "start min" => "00",
+      "start ampm" => "AM",
+      "end hr" => "2",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 16,
+    ),
+
+      array(
+      "title" => "Tuesday Trinity",
+      "type" => "market_day",
+      "day" => "3",
+      "start hr" => "3",
+      "start min" => "00",
+      "start ampm" => "PM",
+      "end hr" => "7",
+      "end min" => "00",
+      "end ampm" => "PM",
+      "market" => 17,
+    ),
+  );
+  return $days;
 }
 
 
