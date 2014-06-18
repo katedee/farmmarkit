@@ -53,7 +53,7 @@ function markets_list_create_node($info){
 
 function markets_list_get_infos(){
   $infos = array(
-    array (
+      array (
       "title" => "Apple Tree Markets",
       "type" => "market",
       "address" => "Davisville Ave and Mount Pleasant",
@@ -65,6 +65,8 @@ function markets_list_get_infos(){
       "start date" => "2014-05-14 00:00:00",
       "end date" => "2014-10-08 00:00:00",
       "website" => "www.appletreemarkets.ca",
+      "latitude" => "43.707524",
+      "longitude" => "-79.389585",
     ),
 
     array (
@@ -79,6 +81,8 @@ function markets_list_get_infos(){
       "start date" => "2014-06-06 00:00:00",
       "end date" => "2014-10-17 00:00:00",
       "website" => "www.my-market.ca",
+      "latitude" => "43.665031",
+      "longitude" => "-79.409148",
     ), 
 
     array (
@@ -93,6 +97,8 @@ function markets_list_get_infos(){
       "start date" => "2014-01-02 00:00:00",
       "end date" => "2014-12-18 00:00:00",
       "website" => "www.dufferinpark.ca",
+      "latitude" => "43.760603",
+      "longitude" => "-79.465072",
     ),  
 
     array (
@@ -107,12 +113,14 @@ function markets_list_get_infos(){
       "start date" => "2014-06-05 00:00:00",
       "end date" => "2014-08-16 00:00:00",
       "website" => "www.my-market.ca",
+      "latitude" => "43.665031",
+      "longitude" => "-79.409148",
     ),  
 
     array (
       "title" => "East York Farmers' Market",
       "type" => "market",
-      "address" => "Located in front of the East York Civic Centre in the park at 850 Coxwel",
+      "address" => "Located in front of the East York Civic Centre in the park at 850 Coxwell",
       "city" => "Toronto",
       "contact name" => "Ruth Abbott",
       "email" => "rabbott@sympatico.ca",
@@ -121,6 +129,8 @@ function markets_list_get_infos(){
       "start date" => "2014-05-13 00:00:00",
       "end date" => "2014-10-28 00:00:00",
       "website" => "",
+      "latitude" => "43.691228",
+      "longitude" => "-79.328355",
     ), 
 
     array (
@@ -135,7 +145,9 @@ function markets_list_get_infos(){
       "start date" => "2014-05-05 00:00:00",
       "end date" => "2014-12-13 00:00:00",
       "website" => "http://ebw.evergreen.ca/farmers-market",
-    ),   
+      "latitude" => "43.683853",
+      "longitude" => "-79.366374",
+    ),
 
 
     array (
@@ -150,27 +162,12 @@ function markets_list_get_infos(){
       "start date" => "2014-06-01 00:00:00",
       "end date" => "2014-11-27 00:00:00",
       "website" => "www.my-market.ca",
+      "latitude" => "43.63828",
+      "longitude" => "-79.420027",
+
     ),
-
-   
-
-     array (
-      "title" => "Sorauren Farmers' Market",
-      "type" => "market",
-      "address" => "289 Sorauren Ave",
-      "city" => "Toronto",
-      "contact name" => "Corry Ouellette",
-      "email" => "info@westendfood.coop",
-      "phone" => "416-533-6363",
-      "postal code" => "M6R1N2",
-      "start date" => "2014-01-01 00:00:00",
-      "end date" => "2014-12-31 00:00:00",
-      "website" => "http://www.westendfood.coop/",
-    ),
-
       
-
-     array (
+    array (
       "title" => "MyMarket at Concord CityPlace",
       "type" => "market",
       "address" => "Canoe Landing Park Spadina Ave & Front Street",
@@ -182,6 +179,8 @@ function markets_list_get_infos(){
       "start date" => "2014-06-03 00:00:00",
       "end date" => "2014-10-15 00:00:00",
       "website" => "www.my-market.ca",
+      "latitude" => "43.644275",
+      "longitude" => "-79.387243",
     ), 
     
      array (
@@ -196,9 +195,27 @@ function markets_list_get_infos(){
       "start date" => "2014-06-06 00:00:00",
       "end date" => "2014-10-17 00:00:00",
       "website" => "www.my-market.ca",
+      "latitude" => "43.769217",
+      "longitude" => "-79.376656",
     ), 
 
-      array (
+    array (
+      "title" => "Sorauren Farmers' Market",
+      "type" => "market",
+      "address" => "289 Sorauren Ave",
+      "city" => "Toronto",
+      "contact name" => "Corry Ouellette",
+      "email" => "info@westendfood.coop",
+      "phone" => "416-533-6363",
+      "postal code" => "M6R1N2",
+      "start date" => "2014-01-01 00:00:00",
+      "end date" => "2014-12-31 00:00:00",
+      "website" => "http://www.westendfood.coop/",
+      "latitude" => "43.647697",
+      "longitude" => "-79.443967",
+    ),
+
+    array (
       "title" => "St. Lawrence",
       "type" => "market",
       "address" => "92 Front Street East",
@@ -210,9 +227,11 @@ function markets_list_get_infos(){
       "start date" => "2014-01-01 00:00:00",
       "end date" => "2014-12-31 00:00:00",
       "website" => "www.stlawrencemarket.com",
+      "latitude" => "43.649574",
+      "longitude" => "-79.371976",
     ),
      
-      array (
+     array (
       "title" => "The Leslieville Farmers' Market",
       "type" => "market",
       "address" => "20 Woodward Ave",
@@ -224,6 +243,8 @@ function markets_list_get_infos(){
       "start date" => "2014-05-25 00:00:00",
       "end date" => "2014-10-26 00:00:00",
       "website" => "www.my-market.ca",
+      "latitude" => "43.665570",
+      "longitude" => "-79.319742",
     ),
 
 
