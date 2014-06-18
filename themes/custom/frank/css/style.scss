@@ -22,7 +22,7 @@ html {
 	width: 100%;
 }
 
-header {
+#page-header {
   text-align: center;
   background: url('http://www.colourbox.com/preview/1973701-483618-seamless-background-with-vegetables-pattern.jpg');
   background-attachment: fixed;
@@ -55,7 +55,7 @@ header {
 	max-width: 900px;
 	margin: 13% auto 20% auto;
 
-	.view-content {
+	.day {
 
 		border: 1px solid darken($carrot,10);
 		width: 100%;

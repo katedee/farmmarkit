@@ -83,7 +83,9 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
+  $handler->display->display_options['fields']['field_website']['element_type'] = '0';
   $handler->display->display_options['fields']['field_website']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_website']['element_default_classes'] = FALSE;
   /* Field: Content: Day */
   $handler->display->display_options['fields']['field_day']['id'] = 'field_day';
   $handler->display->display_options['fields']['field_day']['table'] = 'field_data_field_day';
@@ -102,17 +104,19 @@ function fm_views_views_default_views() {
   $handler->display->display_options['fields']['field_latitude_']['table'] = 'field_data_field_latitude_';
   $handler->display->display_options['fields']['field_latitude_']['field'] = 'field_latitude_';
   $handler->display->display_options['fields']['field_latitude_']['label'] = '';
-  $handler->display->display_options['fields']['field_latitude_']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_latitude_']['element_class'] = 'latitude';
+  $handler->display->display_options['fields']['field_latitude_']['element_type'] = '0';
   $handler->display->display_options['fields']['field_latitude_']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_latitude_']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_latitude_']['element_default_classes'] = FALSE;
   /* Field: Content: Longitude */
   $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['table'] = 'field_data_field_longitude';
   $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['label'] = '';
-  $handler->display->display_options['fields']['field_longitude']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_longitude']['element_class'] = 'longitude';
+  $handler->display->display_options['fields']['field_longitude']['element_type'] = '0';
   $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_longitude']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_longitude']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -132,18 +136,16 @@ function fm_views_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'market' => 'market',
   );
-  /* Filter criterion: Content: Start and End Dates -  start date (field_start_and_end_dates) */
+  /* Filter criterion: Content: Start and End Dates (field_start_and_end_dates) */
   $handler->display->display_options['filters']['field_start_and_end_dates_value']['id'] = 'field_start_and_end_dates_value';
   $handler->display->display_options['filters']['field_start_and_end_dates_value']['table'] = 'field_data_field_start_and_end_dates';
   $handler->display->display_options['filters']['field_start_and_end_dates_value']['field'] = 'field_start_and_end_dates_value';
   $handler->display->display_options['filters']['field_start_and_end_dates_value']['operator'] = '<=';
-  $handler->display->display_options['filters']['field_start_and_end_dates_value']['default_date'] = 'now';
-  /* Filter criterion: Content: Start and End Dates - end date (field_start_and_end_dates:value2) */
+  /* Filter criterion: Content: Start and End Dates (field_start_and_end_dates:value2) */
   $handler->display->display_options['filters']['field_start_and_end_dates_value2']['id'] = 'field_start_and_end_dates_value2';
   $handler->display->display_options['filters']['field_start_and_end_dates_value2']['table'] = 'field_data_field_start_and_end_dates';
   $handler->display->display_options['filters']['field_start_and_end_dates_value2']['field'] = 'field_start_and_end_dates_value2';
   $handler->display->display_options['filters']['field_start_and_end_dates_value2']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_start_and_end_dates_value2']['default_date'] = 'now';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

@@ -632,7 +632,7 @@ html {
   }
 }
 
-header {
+#page-header {
   text-align: center;
   background: url("http://www.colourbox.com/preview/1973701-483618-seamless-background-with-vegetables-pattern.jpg");
   background-attachment: fixed;
@@ -652,7 +652,7 @@ header {
   }
 }
 
-header h1 {
+#page-header h1 {
   padding: 8%;
   text-transform: uppercase;
   color: white;
@@ -670,7 +670,7 @@ header h1 {
   }
 }
 
-header .title {
+#page-header .title {
   border: 5px solid white;
   background: rgba(0, 0, 0, 0.35);
   width: 73%;
@@ -706,7 +706,7 @@ header .title {
   }
 }
 
-.container .view-content {
+.container .day {
   border: 1px solid rgba(241, 161, 40, 0.7);
   width: 100%;
 }
@@ -721,7 +721,7 @@ header .title {
   }
 }
 
-.container .view-content .weekday {
+.container .day .weekday {
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -742,7 +742,7 @@ header .title {
   }
 }
 
-.container .view-content .weekday:hover {
+.container .day .weekday:hover {
   cursor: pointer;
   -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
@@ -759,7 +759,7 @@ header .title {
   }
 }
 
-.container .view-content .slide-info {
+.container .day .slide-info {
   margin: 5% auto;
   padding: 10px;
   display: none;
@@ -775,7 +775,7 @@ header .title {
   }
 }
 
-.container .view-content .slide-info .info-box {
+.container .day .slide-info .info-box {
   font-size: 3rem;
 }
 
@@ -789,7 +789,7 @@ header .title {
   }
 }
 
-.container .view-content .slide-info .map-image {
+.container .day .slide-info .map-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -809,7 +809,7 @@ header .title {
   }
 }
 
-.container .view-content .slide-info .map-image:hover {
+.container .day .slide-info .map-image:hover {
   cursor: pointer;
 }
 
