@@ -21,6 +21,8 @@ dependencies[] = views
 dependencies[] = ctools
 dependencies[] = references
 dependencies[] = afb
+dependencies[] = ds
+dependencies[] = fences
 
 
 ; Core

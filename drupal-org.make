@@ -55,6 +55,13 @@ projects[google_map_field][version] = 2.4
 
 projects[afb][subdir] = contrib
 projects[afb][version] = 1.0
+
+projects[ds][subdir] = contrib
+projects[ds][version] = 2.6
+
+projects[fences][subdir] = contrib
+projects[fences][version] = 1.0
+
 ; THEMES
 
 projects[bootstrap][subdir] = contrib

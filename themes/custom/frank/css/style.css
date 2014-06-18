@@ -1,4 +1,971 @@
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
- */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+[hidden] {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+dfn {
+  font-style: italic;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+small {
+  font-size: 80%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+sup {
+  top: -.5em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+sub {
+  bottom: -.25em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+img {
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+body,
+figure {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000032;
+  }
+}
+
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \000036;
+  }
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+html {
+  font-family: 'Lato';
+  font-size: 62.5%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000321;
+  }
+}
+
+.farmWrapper {
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000325;
+  }
+}
+
+header {
+  text-align: center;
+  background: url("http://www.colourbox.com/preview/1973701-483618-seamless-background-with-vegetables-pattern.jpg");
+  background-attachment: fixed;
+  padding: 7% 0;
+  -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000333;
+  }
+}
+
+header h1 {
+  padding: 8%;
+  text-transform: uppercase;
+  color: white;
+  font-size: 7.5rem;
+  margin: 0 0 3% 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000342;
+  }
+}
+
+header .title {
+  border: 5px solid white;
+  background: rgba(0, 0, 0, 0.35);
+  width: 73%;
+  margin: 0% auto;
+  padding: 1%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000350;
+  }
+}
+
+.container {
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 13% auto 20% auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000358;
+  }
+}
+
+.container .view-content {
+  border: 1px solid rgba(241, 161, 40, 0.7);
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000364;
+  }
+}
+
+.container .view-content .weekday {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 7% 5%;
+  font-size: 7rem;
+  background-color: rgba(244, 182, 88, 0.7);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000375;
+  }
+}
+
+.container .view-content .weekday:hover {
+  cursor: pointer;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+  background-color: rgba(244, 182, 88, 0.9);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000384;
+  }
+}
+
+.container .view-content .slide-info {
+  margin: 5% auto;
+  padding: 10px;
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+.container .view-content .slide-info .info-box {
+  font-size: 3rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000393;
+  }
+}
+
+.container .view-content .slide-info .map-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #afcfaf;
+  float: none;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003102;
+  }
+}
+
+.container .view-content .slide-info .map-image:hover {
+  cursor: pointer;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003118;
+  }
+}
+
+.info-box {
+  float: none;
+  margin: 0 auto;
+  display: inline;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003125;
+  }
+}
+
+.non-curly {
+  border-radius: 0px 0px 30px 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003129;
+  }
+}
+
+footer {
+  background-color: darkseagreen;
+  width: 100%;
+  margin-top: 6%;
+  padding: 10%;
+  border-top: 2px solid #86ad86;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003136;
+  }
+}
+
+footer .icons {
+  width: 210px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003142;
+  }
+}
+
+footer .icons .icon-btn {
+  float: left;
+  background-position: center center;
+  -webkit-background-size: 100px auto;
+  background-size: 100px auto;
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003149;
+  }
+}
+
+footer .icons .icon-btn:first-of-type {
+  margin-right: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003154;
+  }
+}
+
+footer .icons .icon-btn a {
+  text-indent: -9999px;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 200px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003162;
+  }
+}
+
+footer .icons .icon-btn a:hover {
+  cursor: pointer;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003169;
+  }
+}
+
+footer .icons .twitter-icon {
+  background-image: url("images/twitter.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \00003173;
+  }
+}
+
+footer .icons .fb-icon {
+  background-image: url("images/fb.png");
+}
