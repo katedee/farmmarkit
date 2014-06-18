@@ -6,6 +6,7 @@
  *
  * @ingroup views_templates
  */
+
 $title = substr($title, 5);
 ?>
 <div class=<?php print "'" . strtolower($title) . " day-group'";?>>
