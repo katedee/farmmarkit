@@ -7,11 +7,6 @@ function markets_list_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
-
-  return $items;
-}
-
-function markets_days_menu() {
   $items['_load_days'] = array(
     'title' => 'Load Market Days',
     'page callback' => 'markets_days_load',
@@ -28,8 +23,8 @@ function markets_days_load() {
   foreach ($days as $day){
     markets_day_create_node($day);
   };
-  // $node = node_load(1);
-  // dsm($node);
+  // // $node = node_load(1);
+  // // dsm($node);
   return "goodbye";
 }
 
@@ -217,8 +212,8 @@ function markets_list_get_infos(){
       "end date" => "2014-10-17 00:00:00",
       "website" => "www.my-market.ca",
       "latitude" => "43.769217",
-      "longitude" => "-79.376656",
-    ), 
+        "longitude" => "-79.376656",
+      ), 
 
     array (
       "title" => "Sorauren Farmers' Market",
