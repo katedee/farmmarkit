@@ -251,6 +251,7 @@ h2.slogan {
   margin: 0 auto;
   padding: 10px;
   border-bottom: 1px solid rgba(250, 224, 184, 0.7);
+  display: inherit;
 }
 .region .day-group .day-markets .views-row:last-child {
   border-bottom: none;

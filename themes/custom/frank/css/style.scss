@@ -97,7 +97,7 @@ h2.slogan {
 				margin: 0 auto;
 				padding:10px;
 				border-bottom:1px solid lighten($carrot,20);
-
+				display:inherit;
 				// &:nth-child(2n+1) {
 				// 	background-color: lighten($darksea,10);
 				// }
