@@ -10,22 +10,13 @@ jQuery(document).ready(function($){
 		targetElement.html("");
 		var nextSevenDays = getNextSevenDays();
 
+
 		for (var dayIndex = 0; dayIndex < nextSevenDays.length; dayIndex++) {
 			for(var i = 0; i < marketDays.length; i++) {
 				marketDay = $(marketDays[i]);
 				
 				if(marketDay.hasClass(nextSevenDays[dayIndex])) {
-					var latitude = marketDay.find('.latitude').text();
-					var longitude = marketDay.find('.longitude').text();
-					marketDay.find('.views-field-field-latitude-').remove();
-					marketDay.find('.views-field-field-longitude').remove();
-					marketDay.append('<img src="http://maps.googleapis.com/maps/api/staticmap?markers=markerStyles|' + latitude + ',' + longitude + '|&zoom=15&size=100x100&key=AIzaSyANQAsnyyHkowrVvK0DeSbXMs_QDcnfJnA" />');
 					targetElement.append(marketDay);
-					//marketDay - find - element - clear - append - img maps
-					
-					
-					
-
 				}
 			}
 		}
