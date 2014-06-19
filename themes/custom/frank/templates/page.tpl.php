@@ -81,12 +81,13 @@
 <header>
   <div class="title">
    <h1>Farmers' Mark-It</h1>
+   <h2 class="slogan">So, what's open today?</h2>
   </div>
- </header>
+</header>
 
 
-  <h2 class="slogan">So, what's open today?</h2>
-
+<!--   <h2 class="slogan">So, what's open today?</h2>
+ -->
 
   <?php print render($page['content']); ?>
 

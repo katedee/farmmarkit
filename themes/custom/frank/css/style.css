@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Amatic+SC|Lato");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -190,32 +191,34 @@ html {
 
 header {
   text-align: center;
-  background: url("http://www.colourbox.com/preview/1973701-483618-seamless-background-with-vegetables-pattern.jpg");
   background-attachment: fixed;
   padding: 7% 0;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  background: url("http://www.seela.org/wp-content/uploads/2013/01/Best-of-Hollywood_111.jpg");
+  background-size: cover;
   width: 100%;
 }
 header h1 {
-  padding: 8%;
-  text-transform: uppercase;
+  padding: 8% 8% 0 8%;
+  font-family: 'Amatic SC', sans-serif;
   color: white;
-  font-size: 7.5rem;
-  margin: 0 0 3% 0;
+  font-size: 9.5rem;
+  margin: 0;
 }
 header .title {
   border: 5px solid white;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.55);
   width: 73%;
   margin: 0% auto;
   padding: 1%;
 }
 
 h2.slogan {
-  color: #6fa96f;
+  color: #f4b658;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   font-size: 4.5rem;
-  margin-top: 7%;
   text-align: center;
+  margin-top: 1%;
 }
 
 .region {
@@ -250,7 +253,7 @@ h2.slogan {
 .region .day-group .day-markets .views-row {
   margin: 0 auto;
   padding: 10px;
-  border-bottom: 1px solid rgba(250, 224, 184, 0.7);
+  border-bottom: 1px solid rgba(247, 203, 136, 0.7);
   display: inherit;
 }
 .region .day-group .day-markets .views-row:last-child {
@@ -269,9 +272,16 @@ h2.slogan {
 .region .day-group .day-markets .views-row .slide-info .info-box .market-name {
   color: #6fa96f;
 }
-.region .day-group .day-markets .views-row .slide-info .info-box .website, .region .day-group .day-markets .views-row .slide-info .info-box .field-content {
+.region .day-group .day-markets .views-row .slide-info .info-box .website, .region .day-group .day-markets .views-row .slide-info .info-box .field-content, .region .day-group .day-markets .views-row .slide-info .info-box .season, .region .day-group .day-markets .views-row .slide-info .info-box .op-hrs {
   color: dimgray;
   margin-top: 15px;
+}
+.region .day-group .day-markets .views-row .slide-info .info-box .website {
+  font-size: 1.9rem;
+}
+.region .day-group .day-markets .views-row .slide-info .info-box .season {
+  font-size: 2rem;
+  color: rgba(216, 136, 14, 0.7);
 }
 .region .day-group .day-markets .views-row .slide-info img {
   width: 150px;
