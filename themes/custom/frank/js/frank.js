@@ -9,13 +9,18 @@ jQuery(document).ready(function($){
 
 		targetElement.html("");
 		var nextSevenDays = getNextSevenDays();
-
+		var dayText;
 
 		for (var dayIndex = 0; dayIndex < nextSevenDays.length; dayIndex++) {
 			for(var i = 0; i < marketDays.length; i++) {
 				marketDay = $(marketDays[i]);
 				
 				if(marketDay.hasClass(nextSevenDays[dayIndex])) {
+					if (dayIndex === 0) {
+						dayText = marketDay.find('h3').text();
+						dayText += "(today)";
+						marketDay.find('h3').text(dayText);
+					}
 					targetElement.append(marketDay);
 				}
 			}
