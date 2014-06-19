@@ -40,7 +40,7 @@ jQuery(document).ready(function($){
 	}
 
 	$('.day-group h3').click(function(){
-		$(this).siblings('.day-group .views-row').slideToggle();
+		$(this).siblings('.day-group .day-markets').slideToggle();
 	});//weekday click
 
 	$(".day-group:first-of-type h3, .day-group:first-of-type").css("border-radius","30px 30px 0 0");

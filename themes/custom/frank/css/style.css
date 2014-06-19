@@ -180,7 +180,7 @@ html[xmlns] .clearfix {
 }
 
 html {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-size: 62.5%;
 }
 
@@ -237,19 +237,25 @@ header .title {
   transition: 0.7s all ease;
   background-color: rgba(244, 182, 88, 0.9);
 }
-.region .day-group .views-row {
-  margin: 5% auto;
-  padding: 10px;
+.region .day-group .day-markets {
   display: none;
 }
-.region .day-group .views-row .slide-info .info-box {
+.region .day-group .day-markets .views-row {
+  margin: 2% auto;
+  padding: 5px;
+}
+.region .day-group .day-markets .views-row .slide-info {
+  padding: 2%;
+  border-bottom: 1px solid black;
+}
+.region .day-group .day-markets .views-row .slide-info .info-box {
   font-size: 3rem;
   float: none;
   margin: 0 auto;
   display: inline;
   text-align: center;
 }
-.region .day-group .views-row .slide-info img {
+.region .day-group .day-markets .views-row .slide-info img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -258,7 +264,7 @@ header .title {
   margin: 0 auto 10px auto;
   display: block;
 }
-.region .day-group .views-row .slide-info img:hover {
+.region .day-group .day-markets .views-row .slide-info img:hover {
   cursor: pointer;
 }
 
