@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 				if(marketDay.hasClass(nextSevenDays[dayIndex])) {
 					if (dayIndex === 0) {
 						dayText = marketDay.find('h3').text();
-						dayText += "(today)";
+						dayText += " (today)";
 						marketDay.find('h3').text(dayText);
 					}
 					targetElement.append(marketDay);
