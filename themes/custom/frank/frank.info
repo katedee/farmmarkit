@@ -1,7 +1,7 @@
 name = Frank theme for Farmers market.
 description = A Bootstrap Sub-theme for Frank.
 core = 7.x
-base theme = bootstrap
+;base theme = bootstrap
 
 
 ;;;;;;;;;;;;;;;;;;;;;

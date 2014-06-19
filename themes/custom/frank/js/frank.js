@@ -44,8 +44,8 @@ jQuery(document).ready(function($){
 		marketDay.css("background-color","red");
 	}
 
-	$('.day-group').click(function(){
-		$(this).children('section .view .view-content .day-group .views-row').slideToggle();
+	$('.day-group h3').click(function(){
+		$(this).siblings('.day-group .views-row').slideToggle();
 	});//weekday click
 
 	$(".day-group:first-of-type h3, .day-group:first-of-type").css("border-radius","30px 30px 0 0");
