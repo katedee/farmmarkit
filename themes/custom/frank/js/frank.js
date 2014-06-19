@@ -17,9 +17,13 @@ jQuery(document).ready(function($){
 				
 				if(marketDay.hasClass(nextSevenDays[dayIndex])) {
 					if (dayIndex === 0) {
-						dayText = marketDay.find('h3').text();
-						dayText += " (today)";
-						marketDay.find('h3').text(dayText);
+						marketDay.find('h3').text('Today');
+						// dayText = marketDay.find('h3').text();
+						// dayText += " (today)";
+						// marketDay.find('h3').text(dayText);
+					}
+					if (dayIndex === 1) {
+						marketDay.find('h3').text('Tomorrow');
 					}
 					targetElement.append(marketDay);
 				}
