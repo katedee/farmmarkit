@@ -7,7 +7,6 @@
 
  	<div class="slide-info bit-80 clearfix">
 
-
 	<?php echo '<img src="http://maps.googleapis.com/maps/api/staticmap?markers=markerStyles|' . $fields["field_latitude_"]->content . ',' . $fields['field_longitude']->content . '|&zoom=15&size=100x100&key=AIzaSyANQAsnyyHkowrVvK0DeSbXMs_QDcnfJnA" />' ?> 
 
  		<div class="info-box clearfix">
@@ -17,5 +16,5 @@
 
 <!--  			<p class="op-hrs">Hours: 3 p.m. to 7 p.m</p>
  --> 		</div><!--info-box-->
- 	</div>
+ 	</div> <!-- slide-info -->
 

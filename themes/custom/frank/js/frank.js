@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	reorderMarkets();
 
 	function reorderMarkets() {
-		var targetElement = $('.view-content');
+		var targetElement = $('.region');
 
 		var marketDays = $('.day-group');
 		var marketDay;
@@ -44,7 +44,20 @@ jQuery(document).ready(function($){
 		return nextSevenDays;
 	}
 
+	function borderIt () {
+		marketDay.css("background-color","red");
+	}
+
+	$('.day-group').click(function(){
+		$(this).children('section .view .view-content .day-group .views-row').slideToggle();
+	});//weekday click
+
+	$(".day-group:first-of-type h3, .day-group:first-of-type").css("border-radius","30px 30px 0 0");
+	$(".day-group:last-of-type h3, .day-group:last-of-type").addClass('non-curly').click(function(){
+		$(this).toggleClass('non-curly');
+	});
 	
+
 	
 });
 

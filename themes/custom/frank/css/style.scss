@@ -22,7 +22,7 @@ html {
 	width: 100%;
 }
 
-#page-header {
+header {
   text-align: center;
   background: url('http://www.colourbox.com/preview/1973701-483618-seamless-background-with-vegetables-pattern.jpg');
   background-attachment: fixed;
@@ -47,80 +47,85 @@ html {
    padding: 1%;  }
  }
 
-.container {
+section {
 
-	border-radius: 30px;
-	margin:0 auto;
-	width: 90%;
-	max-width: 900px;
-	margin: 13% auto 20% auto;
+	display:block !important;
 
-	.day {
+	.view {
 
-		border: 1px solid darken($carrot,10);
-		width: 100%;
-		
+		margin:0 auto;
 
-		.weekday {
-			text-align:center;
-			color:white;
-			text-transform: uppercase;
-			margin-top:0;
-			margin-bottom:0;
-			padding:7% 5%;
-			font-size:7rem;
-			background-color: $carrot;
+		.view-content {
+
+			border-radius: 30px;
+			margin:0 auto;
+			width: 90%;
+			max-width: 900px;
+			margin: 15% auto 15% auto;
+
+			.day-group {
+
+				border: 1px solid darken($carrot,10);
+				width: 100%;
+				
+
+				> h3 {
+					text-align:center;
+					color:white;
+					text-transform: uppercase;
+					margin-top:0;
+					margin-bottom:0;
+					padding:7% 5%;
+					font-size:7rem;
+					background-color: $carrot;
 
 
-			&:hover {
-				cursor:pointer;
-				transition:0.7s all ease;
-				background-color: rgba(244,182,88,0.9);
-			}
-		}
-
-
-
-		.slide-info {
-			margin: 5% auto;
-			padding:10px;
-			display: none;
-
-			.info-box{
-				font-size: 3rem;
-			}
-
-			.map-image {
-				width: 250px;
-				height: 250px;
-				border-radius:50%;
-				border:1px solid lighten($darksea,10);
-				float: none;
-				margin:0 auto 10px auto;
-				display:block;
-
-				&:hover {
-					cursor:pointer;
+					&:hover {
+						cursor:pointer;
+						transition:0.7s all ease;
+						background-color: rgba(244,182,88,0.9);
+					}
 				}
-			}
 
-		}
-	}//.day
 
-	// .day-1 h3 {
-	// 	border-radius: 30px 30px 0 0;
-	// }
 
-	
+				.views-row {
+					margin: 5% auto;
+					padding:10px;
+					display: none;
 
+					.slide-info {
+
+						.info-box{
+							font-size: 3rem;
+							float:none;
+							margin:0 auto;
+							display:inline;
+							text-align: center;
+						}
+					}
+
+					img {
+						width: 150px;
+						height: 150px;
+						border-radius:50%;
+						border:1px solid lighten($darksea,10);
+						float: none;
+						margin:0 auto 10px auto;
+						display:block;
+
+						&:hover {
+							cursor:pointer;
+						}
+					}
+
+				}
+			}//.day-group
+		} //view-content
+	} // view
 }
 
-.info-box {
-	float:none;
-	margin:0 auto;
-	display:inline;
-	text-align: center;
-}
+
 
 .non-curly {
 	border-radius: 0px 0px 30px 30px;
@@ -133,46 +138,5 @@ footer {
 	padding: 10%;
 	border-top:2px solid rgb(134, 173, 134);
 
-	.icons {
-		width: 210px;
-		margin:0 auto;
-		display:block;
-
-		
-		.icon-btn {
-
-			float:left;
-			background-position: center center;
-			background-size:100px auto;
-			background-repeat:no-repeat;
-
-			&:first-of-type{
-				margin-right: 10px;
-			}
-
-
-			a {
-				text-indent:-9999px;
-				display:block;
-				margin:0 auto;
-				width: 100px;
-				height: 200px;
-
-
-				&:hover {
-					cursor:pointer;
-				}
-			}
-			
-		}
-
-		.twitter-icon {
-			background-image: url("images/twitter.png");
-		}
-
-		.fb-icon {
-			background-image: url("images/fb.png");
-		}
-		
-	}
+	
 }

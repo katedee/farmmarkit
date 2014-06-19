@@ -632,7 +632,7 @@ html {
   }
 }
 
-#page-header {
+header {
   text-align: center;
   background: url("http://www.colourbox.com/preview/1973701-483618-seamless-background-with-vegetables-pattern.jpg");
   background-attachment: fixed;
@@ -652,7 +652,7 @@ html {
   }
 }
 
-#page-header h1 {
+header h1 {
   padding: 8%;
   text-transform: uppercase;
   color: white;
@@ -670,7 +670,7 @@ html {
   }
 }
 
-#page-header .title {
+header .title {
   border: 5px solid white;
   background: rgba(0, 0, 0, 0.35);
   width: 73%;
@@ -688,12 +688,22 @@ html {
   }
 }
 
-.container {
-  border-radius: 30px;
+section {
+  display: block !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000354;
+  }
+}
+
+section .view {
   margin: 0 auto;
-  width: 90%;
-  max-width: 900px;
-  margin: 13% auto 20% auto;
 }
 
 @media -sass-debug-info {
@@ -706,7 +716,25 @@ html {
   }
 }
 
-.container .day {
+section .view .view-content {
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 15% auto 15% auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
+  }
+
+  line {
+    font-family: \0000366;
+  }
+}
+
+section .view .view-content .day-group {
   border: 1px solid rgba(241, 161, 40, 0.7);
   width: 100%;
 }
@@ -717,11 +745,11 @@ html {
   }
 
   line {
-    font-family: \0000364;
+    font-family: \0000372;
   }
 }
 
-.container .day .weekday {
+section .view .view-content .day-group > h3 {
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -738,11 +766,11 @@ html {
   }
 
   line {
-    font-family: \0000375;
+    font-family: \0000383;
   }
 }
 
-.container .day .weekday:hover {
+section .view .view-content .day-group > h3:hover {
   cursor: pointer;
   -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
@@ -755,11 +783,11 @@ html {
   }
 
   line {
-    font-family: \0000384;
+    font-family: \0000392;
   }
 }
 
-.container .day .slide-info {
+section .view .view-content .day-group .views-row {
   margin: 5% auto;
   padding: 10px;
   display: none;
@@ -771,12 +799,16 @@ html {
   }
 
   line {
-    font-family: \0000389;
+    font-family: \0000399;
   }
 }
 
-.container .day .slide-info .info-box {
+section .view .view-content .day-group .views-row .slide-info .info-box {
   font-size: 3rem;
+  float: none;
+  margin: 0 auto;
+  display: inline;
+  text-align: center;
 }
 
 @media -sass-debug-info {
@@ -785,13 +817,13 @@ html {
   }
 
   line {
-    font-family: \0000393;
+    font-family: \00003108;
   }
 }
 
-.container .day .slide-info .map-image {
-  width: 250px;
-  height: 250px;
+section .view .view-content .day-group .views-row img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 1px solid #afcfaf;
   float: none;
@@ -805,11 +837,11 @@ html {
   }
 
   line {
-    font-family: \00003102;
+    font-family: \00003117;
   }
 }
 
-.container .day .slide-info .map-image:hover {
+section .view .view-content .day-group .views-row img:hover {
   cursor: pointer;
 }
 
@@ -819,24 +851,7 @@ html {
   }
 
   line {
-    font-family: \00003118;
-  }
-}
-
-.info-box {
-  float: none;
-  margin: 0 auto;
-  display: inline;
-  text-align: center;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003125;
+    font-family: \00003130;
   }
 }
 
@@ -850,7 +865,7 @@ html {
   }
 
   line {
-    font-family: \00003129;
+    font-family: \00003134;
   }
 }
 
@@ -860,112 +875,4 @@ footer {
   margin-top: 6%;
   padding: 10%;
   border-top: 2px solid #86ad86;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003136;
-  }
-}
-
-footer .icons {
-  width: 210px;
-  margin: 0 auto;
-  display: block;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003142;
-  }
-}
-
-footer .icons .icon-btn {
-  float: left;
-  background-position: center center;
-  -webkit-background-size: 100px auto;
-  background-size: 100px auto;
-  background-repeat: no-repeat;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003149;
-  }
-}
-
-footer .icons .icon-btn:first-of-type {
-  margin-right: 10px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003154;
-  }
-}
-
-footer .icons .icon-btn a {
-  text-indent: -9999px;
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  height: 200px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003162;
-  }
-}
-
-footer .icons .icon-btn a:hover {
-  cursor: pointer;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003169;
-  }
-}
-
-footer .icons .twitter-icon {
-  background-image: url("images/twitter.png");
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/Lyman\/Dropbox\/Web\%20Development\/WordpressRoot\/sandbox2\/drupal-7\.28\/profiles\/farmmarkit\/themes\/custom\/frank\/css\/style\.scss;
-  }
-
-  line {
-    font-family: \00003173;
-  }
-}
-
-footer .icons .fb-icon {
-  background-image: url("images/fb.png");
 }
