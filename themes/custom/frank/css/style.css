@@ -211,12 +211,19 @@ header .title {
   padding: 1%;
 }
 
+h2.slogan {
+  color: #6fa96f;
+  font-size: 4.5rem;
+  margin-top: 7%;
+  text-align: center;
+}
+
 .region {
   border-radius: 30px;
   margin: 0 auto;
   width: 90%;
   max-width: 900px;
-  margin: 15% auto 15% auto;
+  margin: 7% auto 15% auto;
 }
 .region .day-group {
   border: 1px solid rgba(241, 161, 40, 0.7);
@@ -228,8 +235,8 @@ header .title {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 7% 5%;
-  font-size: 7rem;
+  padding: 6% 5%;
+  font-size: 6.7rem;
   background-color: rgba(244, 182, 88, 0.7);
 }
 .region .day-group > h3:hover {
@@ -241,12 +248,15 @@ header .title {
   display: none;
 }
 .region .day-group .day-markets .views-row {
-  margin: 2% auto;
-  padding: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px solid rgba(250, 224, 184, 0.7);
+}
+.region .day-group .day-markets .views-row:last-child {
+  border-bottom: none;
 }
 .region .day-group .day-markets .views-row .slide-info {
   padding: 2%;
-  border-bottom: 1px solid black;
 }
 .region .day-group .day-markets .views-row .slide-info .info-box {
   font-size: 3rem;
@@ -255,11 +265,18 @@ header .title {
   display: inline;
   text-align: center;
 }
+.region .day-group .day-markets .views-row .slide-info .info-box .market-name {
+  color: #6fa96f;
+}
+.region .day-group .day-markets .views-row .slide-info .info-box .website, .region .day-group .day-markets .views-row .slide-info .info-box .field-content {
+  color: dimgray;
+  margin-top: 15px;
+}
 .region .day-group .day-markets .views-row .slide-info img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid #afcfaf;
+  border: 1px solid rgba(250, 224, 184, 0.7);
   float: none;
   margin: 0 auto 10px auto;
   display: block;

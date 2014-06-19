@@ -84,7 +84,10 @@
   </div>
  </header>
 
-  
+
+  <h2 class="slogan">So, what's open today?</h2>
+
+
   <?php print render($page['content']); ?>
 
 
