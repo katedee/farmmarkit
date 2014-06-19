@@ -48,6 +48,13 @@ header {
  }
 
 
+h2.slogan {
+	color:darken($darksea,10);
+	font-size:4.5rem;
+	margin-top:7%;
+	text-align:center;
+}
+
 
 .region {
 
@@ -55,7 +62,7 @@ header {
 	margin:0 auto;
 	width: 90%;
 	max-width: 900px;
-	margin: 15% auto 15% auto;
+	margin: 7% auto 15% auto;
 
 	.day-group {
 
@@ -69,8 +76,8 @@ header {
 			text-transform: uppercase;
 			margin-top:0;
 			margin-bottom:0;
-			padding:7% 5%;
-			font-size:7rem;
+			padding:6% 5%;
+			font-size:6.7rem;
 			background-color: $carrot;
 
 
@@ -87,13 +94,22 @@ header {
 
 			.views-row {
 				
-				margin: 2% auto;
-				padding:5px;
+				margin: 0 auto;
+				padding:10px;
+				border-bottom:1px solid lighten($carrot,20);
+				display:inherit;
+				// &:nth-child(2n+1) {
+				// 	background-color: lighten($darksea,10);
+				// }
+
+				&:last-child {
+					border-bottom: none;
+				}
+
 
 				.slide-info {
 					
 					padding: 2%;
-					border-bottom:1px solid black;
 
 					.info-box{
 
@@ -102,6 +118,15 @@ header {
 						margin:0 auto;
 						display:inline;
 						text-align: center;
+
+						.market-name {
+							color:darken($darksea,10);
+						}
+
+						.website, .field-content {
+							color:dimgray;
+							margin-top:15px;
+						}
 					}
 				
 
@@ -109,7 +134,7 @@ header {
 						width: 150px;
 						height: 150px;
 						border-radius:50%;
-						border:1px solid lighten($darksea,10);
+						border:1px solid lighten($carrot,20);
 						float: none;
 						margin:0 auto 10px auto;
 						display:block;

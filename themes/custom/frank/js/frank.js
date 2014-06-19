@@ -48,8 +48,34 @@ jQuery(document).ready(function($){
 		marketDay.css("background-color","red");
 	}
 
+	// $('.day-group h3').click(function(){
+	// 	$(this).siblings('.day-group .day-markets').slideToggle(function(){
+	// 		var slideInfo = $(this).children('.views-row');
+	// 		var heightSum = 0;
+	// 		for (var i = 0; i < 3; i++) {
+	// 			heightSum += $(slideInfo[i].height());
+	// 		}; // end for
+
+	// 		if (slideInfo.length > 3) {
+	// 			$('.day-group .day-markets').css("max-height", heightSum + "px");
+	// 			$(this).css("overflow-y","scroll");
+	// 			console.log("hey");
+	// 		} // end if
+	// 	}); // end slideToggle
+	// });//weekday click
+
 	$('.day-group h3').click(function(){
-		$(this).siblings('.day-group .day-markets').slideToggle();
+		$(this).siblings('.day-group .day-markets').slideToggle(function(){
+			var slideInfo = $(this).find(".slide-info");
+			var heightSum = 0;
+			for (var i = 0; i < 3; i++) {
+				heightSum += $(slideInfo[i]).height();
+			};
+			if (slideInfo.length > 3) {
+				$(this).css("max-height",heightSum + "px");
+				$(this).css("overflow-y","scroll");
+			}; // end if
+		}); // end
 	});//weekday click
 
 	$(".day-group:first-of-type h3, .day-group:first-of-type").css("border-radius","30px 30px 0 0");
