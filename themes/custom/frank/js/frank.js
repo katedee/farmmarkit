@@ -18,18 +18,15 @@ jQuery(document).ready(function($){
 				if(marketDay.hasClass(nextSevenDays[dayIndex])) {
 					if (dayIndex === 0) {
 						marketDay.find('h3').text('Today');
-						// dayText = marketDay.find('h3').text();
-						// dayText += " (today)";
-						// marketDay.find('h3').text(dayText);
 					}
 					if (dayIndex === 1) {
 						marketDay.find('h3').text('Tomorrow');
 					}
 					targetElement.append(marketDay);
-				}
-			}
-		}
-	}
+				}//end if marketDay.hasClass
+			}// end marketDays.length for loop
+		}// end nextSevenDays for loop
+	}//end reorderMarkets
 
 	function getCurrentDayOfWeek() {
 		var today = new Date(Date.now());
@@ -44,26 +41,6 @@ jQuery(document).ready(function($){
 		return nextSevenDays;
 	}
 
-	function borderIt () {
-		marketDay.css("background-color","red");
-	}
-
-	// $('.day-group h3').click(function(){
-	// 	$(this).siblings('.day-group .day-markets').slideToggle(function(){
-	// 		var slideInfo = $(this).children('.views-row');
-	// 		var heightSum = 0;
-	// 		for (var i = 0; i < 3; i++) {
-	// 			heightSum += $(slideInfo[i].height());
-	// 		}; // end for
-
-	// 		if (slideInfo.length > 3) {
-	// 			$('.day-group .day-markets').css("max-height", heightSum + "px");
-	// 			$(this).css("overflow-y","scroll");
-	// 			console.log("hey");
-	// 		} // end if
-	// 	}); // end slideToggle
-	// });//weekday click
-
 	$('.day-group h3').click(function(){
 		$(this).siblings('.day-group .day-markets').slideToggle(function(){
 			var slideInfo = $(this).find(".slide-info");
@@ -74,16 +51,14 @@ jQuery(document).ready(function($){
 			if (slideInfo.length > 3) {
 				$(this).css("max-height",heightSum + "px");
 				$(this).css("overflow-y","scroll");
-			}; // end if
-		}); // end
+			}; 
+		}); // end slideToggle
 	});//weekday click
 
 	$(".day-group:first-of-type h3, .day-group:first-of-type").css("border-radius","30px 30px 0 0");
 	$(".day-group:last-of-type h3, .day-group:last-of-type").addClass('non-curly').click(function(){
 		$(this).toggleClass('non-curly');
 	});
-	
-
 	
 });
 
